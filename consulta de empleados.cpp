@@ -12,10 +12,10 @@ private:
     float salario;
 
 public:
-
+ 
     Empleado() {}
 
-tos
+    
     void setNombre(string nombre) { this->nombre = nombre; }
     void setApellido(string apellido) { this->apellido = apellido; }
     void setEdad(int edad) { this->edad = edad; }
@@ -32,10 +32,10 @@ int main() {
     cout << "Ingrese el número de empleados: ";
     cin >> numEmpleados;
 
-
+  
     Empleado empleados[numEmpleados];
 
-
+  
     for (int i = 0; i < numEmpleados; i++) {
         Empleado empleado;
 
@@ -63,7 +63,7 @@ int main() {
         empleados[i] = empleado;
     }
 
-
+   
     ofstream archivo("empleados.txt");
     if (archivo.is_open()) {
         for (int i = 0; i < numEmpleados; i++) {
